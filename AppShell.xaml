@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="NewApp.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:views="clr-namespace:NewApp.Views"
+	xmlns:local="clr-namespace:NewApp">
+
+	<TabBar>
+		<ShellContent
+			Title="Main"
+			Icon="iconblank.png"
+			ContentTemplate="{DataTemplate views:MainPage}" />
+		<ShellContent
+			Title="ChoreDetails"
+			Icon="iconlistdetail.png"
+			ContentTemplate="{DataTemplate views:ChoreDetailsPage}" />
+		<ShellContent
+			Title="Chores"
+			Icon="iconlistdetail.png"
+			ContentTemplate="{DataTemplate views:ChoresPage}" />
+		<ShellContent
+			Title="DrawChores"
+			Icon="icondrawing.png"
+			ContentTemplate="{DataTemplate views:DrawChoresPage}" />
+	</TabBar>
+</Shell>
